@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::resources([
     "employee" => "EmployeeController"
 ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
